@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuralForge — AI Developer Tools Platform</title>
+  <meta name="description" content="NeuralForge gives engineering teams the AI-powered tools to ship faster, debug smarter, and scale confidently. The developer platform built for the AI era." />
+  <meta name="keywords" content="AI tools, developer platform, code generation, AI debugging, software engineering" />
+  <meta property="og:title" content="NeuralForge — AI Developer Tools" />
+  <meta property="og:description" content="The AI platform built for engineering teams who ship at scale." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://neuralforge.io/" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="logo" aria-label="NeuralForge home">
+      ⬡ NeuralForge
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+        ☀️
+      </button>
+      <a href="contact.html" class="btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">
+        Get Early Access →
+      </a>
+      <button id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn-primary mt-4" style="justify-content: center;">Get Early Access →</a>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     HERO SECTION
+════════════════════════════════════════════════════════ -->
+<section aria-labelledby="hero-heading" style="min-height:100vh; display:flex; align-items:center; position:relative; overflow:hidden; padding-top:68px;">
+
+  <!-- Grid background -->
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <!-- Radial glow -->
+  <div aria-hidden="true" style="position:absolute; top:20%; left:50%; transform:translateX(-50%); width:700px; height:500px; background:radial-gradient(ellipse, rgba(99,219,255,0.07) 0%, transparent 70%); pointer-events:none;"></div>
+  <div aria-hidden="true" style="position:absolute; top:30%; left:20%; width:400px; height:400px; background:radial-gradient(ellipse, rgba(168,85,247,0.05) 0%, transparent 70%); pointer-events:none;"></div>
+
+  <div class="section" style="padding-top: 40px; padding-bottom: 40px; width:100%; max-width:1200px;">
+    <div style="max-width: 780px; margin: 0 auto; text-align: center;">
+
+      <!-- Badge -->
+      <div class="section-label reveal" style="margin: 0 auto 28px;">
+        <span class="glow-dot"></span>
+        Now in Public Beta · Join 12,000+ developers
+      </div>
+
+      <!-- Headline -->
+      <h1 id="hero-heading" style="font-size: clamp(2.8rem, 6vw, 5rem); margin-bottom: 24px; line-height: 1.05;" class="reveal reveal-delay-1">
+        The AI Platform That
+        <span class="hero-title-gradient"> Ships With You</span>
+      </h1>
+
+      <!-- Sub -->
+      <p style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--text-muted); max-width: 560px; margin: 0 auto 40px; line-height: 1.7;" class="reveal reveal-delay-2">
+        NeuralForge gives engineering teams AI-powered tools to write cleaner code, debug faster, and deploy with confidence — all inside your existing workflow.
+      </p>
+
+      <!-- CTAs -->
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;" class="reveal reveal-delay-3">
+        <a href="contact.html" class="btn-primary">
+          Start Building Free
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="about.html" class="btn-secondary">
+          View Our Story
+        </a>
+      </div>
+
+      <!-- Social proof -->
+      <div style="margin-top: 56px; display:flex; align-items:center; justify-content:center; gap:24px; flex-wrap:wrap;" class="reveal reveal-delay-4">
+        <div style="display:flex; align-items:center; gap: 8px; color:var(--text-muted); font-size:0.88rem;">
+          <span>⭐⭐⭐⭐⭐</span>
+          <span>4.9/5 from 2,400+ reviews</span>
+        </div>
+        <div style="width:1px; height:20px; background: var(--border);"></div>
+        <div style="color:var(--text-muted); font-size:0.88rem;">Trusted by teams at Stripe, Vercel, Linear</div>
+      </div>
+
+    </div>
+
+    <!-- Hero code card -->
+    <div class="animate-float" style="margin-top: 72px; max-width: 720px; margin-left:auto; margin-right:auto;" class="reveal">
+      <div class="glass-card" style="padding: 0; overflow: hidden; border-color: var(--border-bright);">
+        <!-- Terminal bar -->
+        <div style="display:flex; align-items:center; gap:8px; padding: 14px 20px; border-bottom: 1px solid var(--border); background: var(--surface2);">
+          <span style="width:12px;height:12px;border-radius:50%;background:#ff5f56;"></span>
+          <span style="width:12px;height:12px;border-radius:50%;background:#ffbd2e;"></span>
+          <span style="width:12px;height:12px;border-radius:50%;background:#27c93f;"></span>
+          <span style="margin-left:16px; font-size:0.82rem; color:var(--text-muted);">neuralforge — code assistant</span>
+        </div>
+        <!-- Code -->
+        <div style="padding: 24px 28px; font-family: 'Courier New', monospace; font-size: 0.88rem; line-height: 2; overflow-x: auto;">
+          <p><span style="color:#7070a0;">// NeuralForge suggests:</span></p>
+          <p><span style="color:var(--accent);">async function</span> <span style="color:#a78bfa;">fetchUserData</span>(<span style="color:#fbbf24;">userId</span>) {</p>
+          <p style="padding-left:24px;"><span style="color:var(--accent);">const</span> cache = <span style="color:#a78bfa;">await</span> redis.get(<span style="color:#34d399;">`user:${'{'}userId{'}'}`</span>);</p>
+          <p style="padding-left:24px;"><span style="color:var(--accent);">if</span> (cache) <span style="color:var(--accent);">return</span> JSON.parse(cache);</p>
+          <p style="padding-left:24px;"><span style="color:var(--accent);">const</span> user = <span style="color:#a78bfa;">await</span> db.users.findById(userId);</p>
+          <p style="padding-left:24px;"><span style="color:#a78bfa;">await</span> redis.setex(<span style="color:#34d399;">`user:${'{'}userId{'}'}`</span>, <span style="color:#fbbf24;">3600</span>, JSON.stringify(user));</p>
+          <p style="padding-left:24px;"><span style="color:var(--accent);">return</span> user;</p>
+          <p>}</p>
+          <p style="margin-top:8px; color:#27c93f;">✓ Cache layer added · Performance +340% · Security audited</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     STATS
+════════════════════════════════════════════════════════ -->
+<section aria-label="Platform statistics" style="padding: 72px 24px;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div class="grid-4">
+      <div style="text-align:center;" class="reveal">
+        <div class="stat-number" data-target="12400" data-suffix="">12,400</div>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-top:4px;">Active Developers</p>
+      </div>
+      <div style="text-align:center;" class="reveal reveal-delay-1">
+        <div class="stat-number" data-target="340" data-suffix="%">340%</div>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-top:4px;">Average Speed Boost</p>
+      </div>
+      <div style="text-align:center;" class="reveal reveal-delay-2">
+        <div class="stat-number" data-target="98" data-suffix="%">98%</div>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-top:4px;">Uptime SLA</p>
+      </div>
+      <div style="text-align:center;" class="reveal reveal-delay-3">
+        <div class="stat-number" data-target="4" data-suffix="M+">4M+</div>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-top:4px;">Lines Improved</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     FEATURES / SERVICES
+════════════════════════════════════════════════════════ -->
+<section aria-labelledby="features-heading" style="padding: 100px 24px;">
+  <div style="max-width:1200px; margin:0 auto;">
+
+    <div style="text-align:center; margin-bottom: 64px;">
+      <div class="section-label reveal" style="margin: 0 auto 20px;">Features</div>
+      <h2 id="features-heading" class="section-title reveal reveal-delay-1">
+        Everything your team needs<br>to ship AI-first
+      </h2>
+      <p class="section-sub reveal reveal-delay-2" style="margin: 0 auto;">
+        From intelligent autocomplete to autonomous code review — NeuralForge integrates at every stage of your development lifecycle.
+      </p>
+    </div>
+
+    <div class="grid-3">
+
+      <!-- Feature 1 -->
+      <div class="card reveal">
+        <div class="icon-box">🧠</div>
+        <h3 style="font-size:1.15rem; margin-bottom:10px;">Neural Autocomplete</h3>
+        <p style="color:var(--text-muted); font-size:0.93rem; line-height:1.7;">
+          Context-aware completions trained on 50M+ code repositories. Understands your architecture, not just your syntax.
+        </p>
+        <div style="margin-top:20px; display:flex; flex-wrap:wrap; gap:6px;">
+          <span class="badge">Multi-language</span>
+          <span class="badge">Low latency</span>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="card reveal reveal-delay-1">
+        <div class="icon-box">🔍</div>
+        <h3 style="font-size:1.15rem; margin-bottom:10px;">Smart Debugger</h3>
+        <p style="color:var(--text-muted); font-size:0.93rem; line-height:1.7;">
+          Pinpoints root causes in milliseconds. Traces errors across microservices and suggests battle-tested fixes.
+        </p>
+        <div style="margin-top:20px; display:flex; flex-wrap:wrap; gap:6px;">
+          <span class="badge">Stack traces</span>
+          <span class="badge">Auto-fix</span>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="card reveal reveal-delay-2">
+        <div class="icon-box">🛡️</div>
+        <h3 style="font-size:1.15rem; margin-bottom:10px;">Security Scanner</h3>
+        <p style="color:var(--text-muted); font-size:0.93rem; line-height:1.7;">
+          Real-time vulnerability detection aligned with OWASP Top 10. Zero false positives through semantic analysis.
+        </p>
+        <div style="margin-top:20px; display:flex; flex-wrap:wrap; gap:6px;">
+          <span class="badge">OWASP</span>
+          <span class="badge">CVE detection</span>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="card reveal">
+        <div class="icon-box">📝</div>
+        <h3 style="font-size:1.15rem; margin-bottom:10px;">Doc Generator</h3>
+        <p style="color:var(--text-muted); font-size:0.93rem; line-height:1.7;">
+          Auto-generate API docs, inline comments, and README files that actually make sense to humans.
+        </p>
+        <div style="margin-top:20px; display:flex; flex-wrap:wrap; gap:6px;">
+          <span class="badge">JSDoc</span>
+          <span class="badge">OpenAPI</span>
+        </div>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="card reveal reveal-delay-1">
+        <div class="icon-box">⚡</div>
+        <h3 style="font-size:1.15rem; margin-bottom:10px;">Performance Insights</h3>
+        <p style="color:var(--text-muted); font-size:0.93rem; line-height:1.7;">
+          Profiling and bottleneck identification with AI-generated optimization suggestions before you deploy.
+        </p>
+        <div style="margin-top:20px; display:flex; flex-wrap:wrap; gap:6px;">
+          <span class="badge">Profiling</span>
+          <span class="badge">Big-O aware</span>
+        </div>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="card reveal reveal-delay-2">
+        <div class="icon-box">🔄</div>
+        <h3 style="font-size:1.15rem; margin-bottom:10px;">CI/CD Integration</h3>
+        <p style="color:var(--text-muted); font-size:0.93rem; line-height:1.7;">
+          Drop-in plugins for GitHub Actions, GitLab CI, and Jenkins. AI reviews every PR before it hits production.
+        </p>
+        <div style="margin-top:20px; display:flex; flex-wrap:wrap; gap:6px;">
+          <span class="badge">GitHub</span>
+          <span class="badge">GitLab</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════════════════ -->
+<section aria-labelledby="testimonials-heading" style="padding: 0 24px 100px;">
+  <div style="max-width:1200px; margin:0 auto;">
+
+    <div style="text-align:center; margin-bottom: 64px;">
+      <div class="section-label reveal" style="margin: 0 auto 20px;">Testimonials</div>
+      <h2 id="testimonials-heading" class="section-title reveal reveal-delay-1">
+        Loved by teams who care<br>about their craft
+      </h2>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card testimonial-card reveal">
+        <p class="testimonial-text">"NeuralForge cut our code review time in half. The AI suggestions are eerily accurate — it's like pairing with a senior engineer 24/7."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SR</div>
+          <div>
+            <p style="font-weight:600; font-size:0.95rem;">Sarah R.</p>
+            <p style="color:var(--text-muted); font-size:0.83rem;">Staff Engineer, Vercel</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card testimonial-card reveal reveal-delay-1">
+        <p class="testimonial-text">"We shipped our last feature 3x faster than any previous sprint. The debugger alone saved us two full days of incident response."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: linear-gradient(135deg, #22d3ee, #6366f1);">MK</div>
+          <div>
+            <p style="font-weight:600; font-size:0.95rem;">Marcus K.</p>
+            <p style="color:var(--text-muted); font-size:0.83rem;">CTO, Foundry Labs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card testimonial-card reveal reveal-delay-2">
+        <p class="testimonial-text">"Security scanning used to be a day-long manual process. NeuralForge runs it on every commit. Our audit passed with zero critical findings."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">PL</div>
+          <div>
+            <p style="font-weight:600; font-size:0.95rem;">Priya L.</p>
+            <p style="color:var(--text-muted); font-size:0.83rem;">Security Lead, Stripe</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     CTA BANNER
+════════════════════════════════════════════════════════ -->
+<section style="padding: 0 24px 100px;" aria-label="Call to action">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div class="cta-banner reveal">
+      <div style="position:relative; z-index:1;">
+        <div class="section-label" style="margin: 0 auto 20px;">Ready to forge ahead?</div>
+        <h2 style="font-size: clamp(1.8rem, 3.5vw, 3rem); margin-bottom: 16px;">
+          Start building smarter today.<br>Free forever for solo devs.
+        </h2>
+        <p style="color:var(--text-muted); font-size:1.05rem; margin-bottom: 36px; max-width:480px; margin-left:auto; margin-right:auto;">
+          No credit card required. Join the waitlist and get 3 months Pro free when we launch.
+        </p>
+        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+          <a href="contact.html" class="btn-primary" style="font-size:1rem; padding: 15px 32px;">
+            Get Early Access — It's Free
+          </a>
+          <a href="about.html" class="btn-secondary" style="font-size:1rem;">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-col">
+        <div class="logo" style="font-size:1.4rem; margin-bottom:16px;">⬡ NeuralForge</div>
+        <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7; max-width:300px;">
+          The AI developer platform for teams who care about quality, speed, and security. Built in San Francisco.
+        </p>
+        <div class="social-links" role="list" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Twitter/X">𝕏</a>
+          <a href="#" class="social-link" aria-label="GitHub">⌥</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Discord">◎</a>
+        </div>
+      </div>
+      <!-- Product -->
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Changelog</a></li>
+          <li><a href="#">Roadmap</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+      <!-- Company -->
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <!-- Legal -->
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 NeuralForge, Inc. All rights reserved.</p>
+      <p>Made with ⚡ in San Francisco</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

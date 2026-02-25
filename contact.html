@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — NeuralForge</title>
+  <meta name="description" content="Get in touch with the NeuralForge team. Join the early access waitlist, report a bug, or just say hello." />
+  <link rel="canonical" href="https://neuralforge.io/contact.html" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="logo" aria-label="NeuralForge home">⬡ NeuralForge</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">☀️</button>
+      <a href="contact.html" class="btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">Get Early Access →</a>
+      <button id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     PAGE HERO
+════════════════════════════════════════════════════════ -->
+<section class="page-hero" aria-labelledby="contact-heading">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div aria-hidden="true" style="position:absolute; top:20%; right:10%; width:500px; height:400px; background:radial-gradient(ellipse, rgba(99,219,255,0.06) 0%, transparent 70%); pointer-events:none;"></div>
+
+  <div class="section" style="padding-top:0; padding-bottom:0; width:100%;">
+    <div class="section-label reveal">Contact</div>
+    <h1 id="contact-heading" class="section-title reveal reveal-delay-1" style="font-size: clamp(2.5rem, 5vw, 4rem); max-width: 700px;">
+      Let's talk. We don't<br><span class="gradient-text">bite (much).</span>
+    </h1>
+    <p class="section-sub reveal reveal-delay-2" style="margin-top:20px;">
+      Whether you want early access, have a partnership idea, or just want to tell us what's broken — we read every message.
+    </p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     CONTACT SECTION
+════════════════════════════════════════════════════════ -->
+<section style="padding: 100px 24px;" aria-label="Contact information and form">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div style="display: grid; grid-template-columns: 1fr 1.6fr; gap: 64px; align-items: start;">
+
+      <!-- Left: Info -->
+      <div>
+        <div class="section-label reveal" style="margin-bottom: 28px;">Reach us</div>
+
+        <!-- Info cards -->
+        <div style="display:flex; flex-direction:column; gap:16px;">
+
+          <div class="card contact-info-card reveal">
+            <div class="contact-icon" aria-hidden="true">📧</div>
+            <div>
+              <h3 style="font-size:0.9rem; font-weight:600; margin-bottom:4px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em;">Email Us</h3>
+              <a href="mailto:hello@neuralforge.io" style="color:var(--text); font-size:1rem; transition: color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text)'">hello@neuralforge.io</a>
+              <p style="color:var(--text-muted); font-size:0.85rem; margin-top:2px;">We respond within 24 hours.</p>
+            </div>
+          </div>
+
+          <div class="card contact-info-card reveal reveal-delay-1">
+            <div class="contact-icon" aria-hidden="true" style="background: rgba(168,85,247,0.1); border-color: rgba(168,85,247,0.2);">📞</div>
+            <div>
+              <h3 style="font-size:0.9rem; font-weight:600; margin-bottom:4px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em;">Call Us</h3>
+              <a href="tel:+14155550182" style="color:var(--text); font-size:1rem; transition: color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text)'"">+1 (415) 555-0182</a>
+              <p style="color:var(--text-muted); font-size:0.85rem; margin-top:2px;">Mon–Fri, 9am–6pm PT</p>
+            </div>
+          </div>
+
+          <div class="card contact-info-card reveal reveal-delay-2">
+            <div class="contact-icon" aria-hidden="true" style="background: rgba(34,211,238,0.1); border-color: rgba(34,211,238,0.2);">📍</div>
+            <div>
+              <h3 style="font-size:0.9rem; font-weight:600; margin-bottom:4px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em;">Visit Us</h3>
+              <p style="color:var(--text); font-size:1rem;">548 Market St, Suite 12</p>
+              <p style="color:var(--text-muted); font-size:0.85rem; margin-top:2px;">San Francisco, CA 94104</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="divider" style="margin: 28px 0;"></div>
+
+        <!-- Response time badge -->
+        <div class="reveal" style="display:flex; align-items:center; gap:10px; padding:16px 20px; background:var(--surface); border:1px solid var(--border); border-radius:12px;">
+          <span style="font-size:1.2rem;">⚡</span>
+          <div>
+            <p style="font-size:0.9rem; font-weight:600;">Avg. Response Time</p>
+            <p style="color:var(--text-muted); font-size:0.85rem;">Under 4 hours during business hours</p>
+          </div>
+        </div>
+
+        <!-- Social links -->
+        <div class="reveal" style="margin-top: 24px;">
+          <p style="color:var(--text-muted); font-size:0.88rem; margin-bottom: 12px;">Or find us on</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="GitHub">⌥</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="Discord">◎</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Form -->
+      <div class="card reveal reveal-delay-1" style="padding: 40px;">
+
+        <!-- Success State -->
+        <div id="success-msg" role="alert" aria-live="polite">
+          <div class="checkmark">✅</div>
+          <h3 style="font-size:1.5rem; font-family:var(--font-display); margin-bottom:12px;">Message sent!</h3>
+          <p style="color:var(--text-muted); line-height:1.7;">Thanks for reaching out. We'll be in touch within 24 hours. Check your spam folder just in case!</p>
+          <div style="margin-top:28px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+            <a href="index.html" class="btn-primary">Back to Home</a>
+            <a href="about.html" class="btn-secondary">Read Our Story</a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contact-form" novalidate aria-label="Contact form">
+          <h2 style="font-size:1.4rem; margin-bottom:8px; font-family:var(--font-display);">Send us a message</h2>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:32px;">Fill out the form and we'll get back to you shortly.</p>
+
+          <!-- Name + Email row -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label for="name">Full Name <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Alex Doran" autocomplete="name" required aria-required="true" aria-describedby="name-error" />
+              <span id="name-error" class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+              <input type="email" id="email" name="email" placeholder="alex@company.io" autocomplete="email" required aria-required="true" aria-describedby="email-error" />
+              <span id="email-error" class="form-error" role="alert"></span>
+            </div>
+          </div>
+
+          <!-- Subject -->
+          <div class="form-group">
+            <label for="subject">Subject <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <input type="text" id="subject" name="subject" placeholder="Early access request / Partnership / Bug report…" required aria-required="true" aria-describedby="subject-error" />
+            <span id="subject-error" class="form-error" role="alert"></span>
+          </div>
+
+          <!-- Topic select -->
+          <div class="form-group">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option value="">Select a topic…</option>
+              <option value="early-access">Early Access / Waitlist</option>
+              <option value="enterprise">Enterprise Inquiry</option>
+              <option value="partnership">Partnership</option>
+              <option value="bug">Bug Report</option>
+              <option value="careers">Careers</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="message">Message <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what you're building, what you need, or what's going wrong…" required aria-required="true" aria-describedby="message-error"></textarea>
+            <span id="message-error" class="form-error" role="alert"></span>
+          </div>
+
+          <!-- Agree checkbox -->
+          <div style="display:flex; align-items:flex-start; gap:12px; margin-bottom:28px;">
+            <input type="checkbox" id="agree" name="agree" style="margin-top:4px; accent-color:var(--accent); width:16px; height:16px;" />
+            <label for="agree" style="font-size:0.88rem; color:var(--text-muted); cursor:pointer; line-height:1.6;">
+              I agree to the <a href="#" style="color:var(--accent);">Privacy Policy</a> and <a href="#" style="color:var(--accent);">Terms of Service</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center; font-size:1rem; padding: 15px 24px;">
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     MAP PLACEHOLDER
+════════════════════════════════════════════════════════ -->
+<section style="padding: 0 24px 100px;" aria-label="Office location map">
+  <div style="max-width:1200px; margin:0 auto;">
+
+    <div class="reveal" style="margin-bottom: 24px;">
+      <h2 style="font-size:1.4rem; margin-bottom:8px; font-family:var(--font-display);">Find us in San Francisco</h2>
+      <p style="color:var(--text-muted); font-size:0.92rem;">548 Market St, Suite 12 · SF, CA 94104 · 5 min walk from Montgomery BART</p>
+    </div>
+
+    <div class="map-placeholder reveal reveal-delay-1" role="img" aria-label="Map of NeuralForge office location in San Francisco">
+      <div style="position:relative; z-index:1; text-align:center;">
+        <div style="font-size:3rem; margin-bottom:12px;">📍</div>
+        <p style="font-weight:600; font-size:1rem; margin-bottom:4px;">NeuralForge HQ</p>
+        <p style="color:var(--text-muted); font-size:0.9rem;">548 Market St, San Francisco, CA</p>
+        <a href="https://maps.google.com/?q=548+Market+St+San+Francisco" target="_blank" rel="noopener" class="btn-secondary" style="margin-top: 20px; display:inline-flex;">
+          Open in Google Maps ↗
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     FAQ QUICK LINKS
+════════════════════════════════════════════════════════ -->
+<section style="padding: 0 24px 100px;" aria-labelledby="faq-heading">
+  <div style="max-width:1200px; margin:0 auto;">
+
+    <div style="text-align:center; margin-bottom: 48px;">
+      <div class="section-label reveal" style="margin: 0 auto 16px;">FAQ</div>
+      <h2 id="faq-heading" class="section-title reveal reveal-delay-1">Common questions</h2>
+    </div>
+
+    <div class="grid-2">
+
+      <div class="card reveal" style="padding:28px;">
+        <h3 style="font-size:1.05rem; margin-bottom:10px;">When will I get early access?</h3>
+        <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7;">We're onboarding in weekly batches. After you sign up, expect an invite within 7–14 days. We'll email you when your slot is ready.</p>
+      </div>
+
+      <div class="card reveal reveal-delay-1" style="padding:28px;">
+        <h3 style="font-size:1.05rem; margin-bottom:10px;">Is NeuralForge free?</h3>
+        <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7;">Solo developers get a generous free tier forever. Team plans start at $19/seat/month. Early access users get 3 months free on any paid plan.</p>
+      </div>
+
+      <div class="card reveal" style="padding:28px;">
+        <h3 style="font-size:1.05rem; margin-bottom:10px;">Is my code stored on your servers?</h3>
+        <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7;">Never. We process code in-memory with zero persistence. Enterprise customers get self-hosted deployment options. SOC 2 Type II certified.</p>
+      </div>
+
+      <div class="card reveal reveal-delay-1" style="padding:28px;">
+        <h3 style="font-size:1.05rem; margin-bottom:10px;">What editors do you support?</h3>
+        <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7;">VS Code and JetBrains are GA. Neovim, Emacs, and Sublime plugins are in beta. CLI tools and GitHub Actions integrations work with any editor.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo" style="font-size:1.4rem; margin-bottom:16px;">⬡ NeuralForge</div>
+        <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7; max-width:300px;">The AI developer platform for teams who care about quality, speed, and security.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Twitter/X">𝕏</a>
+          <a href="#" class="social-link" aria-label="GitHub">⌥</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Discord">◎</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul><li><a href="#">Features</a></li><li><a href="#">Pricing</a></li><li><a href="#">Changelog</a></li><li><a href="#">Roadmap</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul><li><a href="about.html">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Careers</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Security</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 NeuralForge, Inc. All rights reserved.</p>
+      <p>Made with ⚡ in San Francisco</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- Contact page specific: two-column responsive fix -->
+<style>
+  @media (max-width: 768px) {
+    #contact-form .form-group + .form-group,
+    #contact-form > div[style*="grid"] {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
+
+</body>
+</html>

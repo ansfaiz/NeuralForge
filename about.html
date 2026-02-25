@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — NeuralForge</title>
+  <meta name="description" content="Learn the story behind NeuralForge — our mission, team, and the values that drive the AI developer platform." />
+  <link rel="canonical" href="https://neuralforge.io/about.html" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════
+     NAVBAR (reused)
+════════════════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="logo" aria-label="NeuralForge home">⬡ NeuralForge</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">☀️</button>
+      <a href="contact.html" class="btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">Get Early Access →</a>
+      <button id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     PAGE HERO
+════════════════════════════════════════════════════════ -->
+<section class="page-hero" aria-labelledby="about-heading">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div aria-hidden="true" style="position:absolute; top:30%; left:50%; transform:translateX(-50%); width:600px; height:400px; background:radial-gradient(ellipse, rgba(168,85,247,0.08) 0%, transparent 70%); pointer-events:none;"></div>
+
+  <div class="section" style="padding-top: 0; padding-bottom: 0; width:100%;">
+    <div class="section-label reveal">Company</div>
+    <h1 id="about-heading" class="section-title reveal reveal-delay-1" style="font-size: clamp(2.5rem, 5vw, 4.5rem); max-width: 700px;">
+      We're building the<br><span class="gradient-text">future of developer tools</span>
+    </h1>
+    <p class="section-sub reveal reveal-delay-2" style="margin-top: 20px;">
+      Founded by engineers who were tired of slow, dumb tooling — we set out to create the platform we always wished existed.
+    </p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     COMPANY STORY
+════════════════════════════════════════════════════════ -->
+<section aria-labelledby="story-heading" style="padding: 100px 24px;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+
+      <div>
+        <div class="section-label reveal">Our Story</div>
+        <h2 id="story-heading" class="section-title reveal reveal-delay-1">
+          Born out of<br>frustration. Built with<br>precision.
+        </h2>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <p style="color:var(--text-muted); font-size:1.05rem; line-height:1.8; margin-bottom: 20px;">
+          In 2022, our founders were engineering leads at two of Silicon Valley's fastest-growing companies. They shared a common pain: the tools available to developers hadn't kept pace with the demands of modern software.
+        </p>
+        <p style="color:var(--text-muted); font-size:1.05rem; line-height:1.8; margin-bottom: 20px;">
+          Code review was a bottleneck. Security audits were manual and slow. Documentation was an afterthought. They left their jobs to fix this.
+        </p>
+        <p style="color:var(--text-muted); font-size:1.05rem; line-height:1.8;">
+          NeuralForge launched its alpha in January 2024 and grew to 12,000 developers in 8 months — without a single dollar of paid marketing. The product speaks for itself.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     MISSION & VISION
+════════════════════════════════════════════════════════ -->
+<section aria-labelledby="mission-heading" style="padding: 0 24px 100px;">
+  <div style="max-width:1200px; margin:0 auto;">
+
+    <div style="text-align:center; margin-bottom: 56px;">
+      <div class="section-label reveal" style="margin: 0 auto 16px;">Purpose</div>
+      <h2 id="mission-heading" class="section-title reveal reveal-delay-1">Mission &amp; Vision</h2>
+    </div>
+
+    <div class="grid-2">
+      <div class="glass-card reveal" style="padding: 40px; border: 1px solid rgba(99,219,255,0.2);">
+        <div style="font-size:2.4rem; margin-bottom:20px;">🎯</div>
+        <h3 style="font-size:1.3rem; margin-bottom:14px; font-family:var(--font-display);">Our Mission</h3>
+        <p style="color:var(--text-muted); line-height:1.8;">
+          To make every developer on the planet 10× more effective through AI that integrates seamlessly into their workflow — no new habits, no friction, no compromise on code quality.
+        </p>
+      </div>
+
+      <div class="glass-card reveal reveal-delay-1" style="padding: 40px; border: 1px solid rgba(168,85,247,0.2);">
+        <div style="font-size:2.4rem; margin-bottom:20px;">🔭</div>
+        <h3 style="font-size:1.3rem; margin-bottom:14px; font-family:var(--font-display);">Our Vision</h3>
+        <p style="color:var(--text-muted); line-height:1.8;">
+          A world where software teams spend zero time on repetitive tasks — where all cognitive energy goes toward solving meaningful problems, and AI handles everything else.
+        </p>
+      </div>
+    </div>
+
+    <!-- Values -->
+    <div style="margin-top: 40px;" class="grid-3">
+      <div class="card reveal" style="padding: 24px;">
+        <div style="font-size:1.6rem; margin-bottom:12px;">🔬</div>
+        <h4 style="font-size:1rem; margin-bottom:8px;">Science-first</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">Every feature is backed by research, not hype. We measure, iterate, and publish our findings openly.</p>
+      </div>
+      <div class="card reveal reveal-delay-1" style="padding: 24px;">
+        <div style="font-size:1.6rem; margin-bottom:12px;">🤝</div>
+        <h4 style="font-size:1rem; margin-bottom:8px;">Developer-first</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">We're developers too. Every decision is made from the perspective of someone who ships code daily.</p>
+      </div>
+      <div class="card reveal reveal-delay-2" style="padding: 24px;">
+        <div style="font-size:1.6rem; margin-bottom:12px;">🔐</div>
+        <h4 style="font-size:1rem; margin-bottom:8px;">Privacy by design</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">Your code stays yours. On-premise deployment, E2E encryption, and SOC 2 compliance from day one.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     TEAM
+════════════════════════════════════════════════════════ -->
+<section aria-labelledby="team-heading" style="padding: 0 24px 100px;">
+  <div style="max-width:1200px; margin:0 auto;">
+
+    <div style="text-align:center; margin-bottom: 56px;">
+      <div class="section-label reveal" style="margin:0 auto 16px;">The Team</div>
+      <h2 id="team-heading" class="section-title reveal reveal-delay-1">Built by people<br>who've been in the trenches</h2>
+      <p class="section-sub reveal reveal-delay-2" style="margin: 16px auto 0;">
+        Formerly from Google, Stripe, GitHub, and Palantir — we've collectively shipped software used by billions.
+      </p>
+    </div>
+
+    <div class="grid-4">
+
+      <div class="card team-card reveal">
+        <div class="team-avatar">AD</div>
+        <h3 style="font-size:1rem; font-family:var(--font-display); margin-bottom:4px;">Alex Doran</h3>
+        <p style="color:var(--accent); font-size:0.85rem; margin-bottom:8px;">Co-founder &amp; CEO</p>
+        <p style="color:var(--text-muted); font-size:0.85rem; line-height:1.6;">Ex-Google Brain. Built production ML systems at scale for 8 years.</p>
+      </div>
+
+      <div class="card team-card reveal reveal-delay-1">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #22d3ee, #6366f1);">JY</div>
+        <h3 style="font-size:1rem; font-family:var(--font-display); margin-bottom:4px;">Juno Yee</h3>
+        <p style="color:var(--accent); font-size:0.85rem; margin-bottom:8px;">Co-founder &amp; CTO</p>
+        <p style="color:var(--text-muted); font-size:0.85rem; line-height:1.6;">Staff Engineer at Stripe. Designed their real-time fraud detection systems.</p>
+      </div>
+
+      <div class="card team-card reveal reveal-delay-2">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #f59e0b, #ec4899);">MH</div>
+        <h3 style="font-size:1rem; font-family:var(--font-display); margin-bottom:4px;">Maya Hassan</h3>
+        <p style="color:var(--accent); font-size:0.85rem; margin-bottom:8px;">Head of Product</p>
+        <p style="color:var(--text-muted); font-size:0.85rem; line-height:1.6;">Built developer tooling at GitHub for 5 years. GitHub Copilot early team member.</p>
+      </div>
+
+      <div class="card team-card reveal reveal-delay-3">
+        <div class="team-avatar" style="background: linear-gradient(135deg, #84cc16, #06b6d4);">OR</div>
+        <h3 style="font-size:1rem; font-family:var(--font-display); margin-bottom:4px;">Omar Reyes</h3>
+        <p style="color:var(--accent); font-size:0.85rem; margin-bottom:8px;">Head of Security</p>
+        <p style="color:var(--text-muted); font-size:0.85rem; line-height:1.6;">15 years in application security. Led security architecture at Palantir.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     TECH STACK
+════════════════════════════════════════════════════════ -->
+<section aria-labelledby="tech-heading" style="padding: 0 24px 100px;">
+  <div style="max-width:1200px; margin:0 auto;">
+
+    <div style="text-align:center; margin-bottom: 48px;">
+      <div class="section-label reveal" style="margin: 0 auto 16px;">Technology</div>
+      <h2 id="tech-heading" class="section-title reveal reveal-delay-1">Built on a foundation<br>that scales</h2>
+    </div>
+
+    <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;" role="list" aria-label="Technologies used">
+      <div class="tech-tag reveal" role="listitem">⚛️ PyTorch</div>
+      <div class="tech-tag reveal reveal-delay-1" role="listitem">🦀 Rust</div>
+      <div class="tech-tag reveal reveal-delay-2" role="listitem">☁️ Kubernetes</div>
+      <div class="tech-tag reveal" role="listitem">🐍 Python</div>
+      <div class="tech-tag reveal reveal-delay-1" role="listitem">📦 TypeScript</div>
+      <div class="tech-tag reveal reveal-delay-2" role="listitem">🗄️ PostgreSQL</div>
+      <div class="tech-tag reveal" role="listitem">⚡ Redis</div>
+      <div class="tech-tag reveal reveal-delay-1" role="listitem">🔀 Apache Kafka</div>
+      <div class="tech-tag reveal reveal-delay-2" role="listitem">🌩️ AWS</div>
+      <div class="tech-tag reveal" role="listitem">🐋 Docker</div>
+      <div class="tech-tag reveal reveal-delay-1" role="listitem">📊 Grafana</div>
+      <div class="tech-tag reveal reveal-delay-2" role="listitem">🔐 Vault</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     TIMELINE
+════════════════════════════════════════════════════════ -->
+<section aria-labelledby="timeline-heading" style="padding: 0 24px 100px;">
+  <div style="max-width:1200px; margin:0 auto;">
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+
+      <div>
+        <div class="section-label reveal">Milestones</div>
+        <h2 id="timeline-heading" class="section-title reveal reveal-delay-1" style="margin-bottom:48px;">
+          How we got here
+        </h2>
+
+        <div class="timeline reveal reveal-delay-2">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <p style="color:var(--accent); font-size:0.82rem; font-weight:600; letter-spacing:0.05em; text-transform:uppercase; margin-bottom:4px;">Q1 2022</p>
+            <h4 style="font-size:1rem; margin-bottom:6px;">Founded</h4>
+            <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">Alex and Juno quit their jobs and begin building NeuralForge from a San Francisco apartment.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <p style="color:var(--accent); font-size:0.82rem; font-weight:600; letter-spacing:0.05em; text-transform:uppercase; margin-bottom:4px;">Q3 2022</p>
+            <h4 style="font-size:1rem; margin-bottom:6px;">Seed Round — $4.2M</h4>
+            <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">Raised from Sequoia and Y Combinator. Grew to 8 full-time engineers.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <p style="color:var(--accent); font-size:0.82rem; font-weight:600; letter-spacing:0.05em; text-transform:uppercase; margin-bottom:4px;">Q1 2024</p>
+            <h4 style="font-size:1rem; margin-bottom:6px;">Alpha Launch</h4>
+            <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">1,000 early adopters in the first week. Product-hunt #1 of the day.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <p style="color:var(--accent); font-size:0.82rem; font-weight:600; letter-spacing:0.05em; text-transform:uppercase; margin-bottom:4px;">Q3 2024</p>
+            <h4 style="font-size:1rem; margin-bottom:6px;">Series A — $18M</h4>
+            <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">Led by a16z. Reached 12,000 active developers with 98% retention.</p>
+          </div>
+
+          <div class="timeline-item" style="margin-bottom:0;">
+            <div class="timeline-dot" style="background: var(--accent2); box-shadow: 0 0 12px var(--accent2);"></div>
+            <p style="color:var(--accent2); font-size:0.82rem; font-weight:600; letter-spacing:0.05em; text-transform:uppercase; margin-bottom:4px;">2025 →</p>
+            <h4 style="font-size:1rem; margin-bottom:6px;">Public Launch</h4>
+            <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">Enterprise tier, VS Code extension, and IDE plugins — coming soon.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Achievements cards -->
+      <div style="padding-top: 100px;">
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+
+          <div class="card reveal" style="padding: 28px;">
+            <div style="display:flex; align-items:center; gap:16px;">
+              <div style="font-size:2rem;">🏆</div>
+              <div>
+                <h4 style="font-size:1rem; margin-bottom:4px;">Product Hunt #1</h4>
+                <p style="color:var(--text-muted); font-size:0.88rem;">Best Developer Tool of the Month, January 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card reveal reveal-delay-1" style="padding: 28px;">
+            <div style="display:flex; align-items:center; gap:16px;">
+              <div style="font-size:2rem;">🔒</div>
+              <div>
+                <h4 style="font-size:1rem; margin-bottom:4px;">SOC 2 Type II Certified</h4>
+                <p style="color:var(--text-muted); font-size:0.88rem;">Zero security incidents since launch — verified by third-party audit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card reveal reveal-delay-2" style="padding: 28px;">
+            <div style="display:flex; align-items:center; gap:16px;">
+              <div style="font-size:2rem;">📰</div>
+              <div>
+                <h4 style="font-size:1rem; margin-bottom:4px;">Featured in TechCrunch</h4>
+                <p style="color:var(--text-muted); font-size:0.88rem;">"The AI developer tool that actually works." — TC, March 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card reveal reveal-delay-3" style="padding: 28px;">
+            <div style="display:flex; align-items:center; gap:16px;">
+              <div style="font-size:2rem;">🌍</div>
+              <div>
+                <h4 style="font-size:1rem; margin-bottom:4px;">42 Countries</h4>
+                <p style="color:var(--text-muted); font-size:0.88rem;">Developers using NeuralForge on every continent.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     CTA
+════════════════════════════════════════════════════════ -->
+<section style="padding: 0 24px 100px;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div class="cta-banner reveal">
+      <div style="position:relative; z-index:1;">
+        <h2 style="font-size: clamp(1.6rem, 3vw, 2.6rem); margin-bottom: 16px;">Want to join the team?</h2>
+        <p style="color:var(--text-muted); margin-bottom: 32px; font-size:1.05rem;">We're hiring engineers, designers, and GTM folks who care deeply about developer experience.</p>
+        <a href="contact.html" class="btn-primary" style="font-size:1rem; padding: 14px 30px;">
+          See Open Roles →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo" style="font-size:1.4rem; margin-bottom:16px;">⬡ NeuralForge</div>
+        <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7; max-width:300px;">The AI developer platform for teams who care about quality, speed, and security.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Twitter/X">𝕏</a>
+          <a href="#" class="social-link" aria-label="GitHub">⌥</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Discord">◎</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul><li><a href="#">Features</a></li><li><a href="#">Pricing</a></li><li><a href="#">Changelog</a></li><li><a href="#">Roadmap</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul><li><a href="about.html">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Careers</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Security</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 NeuralForge, Inc. All rights reserved.</p>
+      <p>Made with ⚡ in San Francisco</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
